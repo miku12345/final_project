@@ -1,0 +1,27 @@
+body
+{
+    text-align:center;
+}
+
+table
+{
+    width: 60%;
+    margin: auto;
+    font-size: 1.5em;
+}
+td
+{
+    border-bottom: 5px solid blue;
+}
+li{
+    text-align:left;
+}
+
+#t1
+{
+    background-color:yellow;
+}
+#t2
+{
+    background-color:gray;
+}
