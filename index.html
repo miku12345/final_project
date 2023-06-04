@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>確診人數</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div>
+            <p>台灣縣市區域每日新增確診圖表</p>
+            <p>[ 數據來源: 衛福部疾管署 ]</p>
+            <p>記錄從2020-1-11至2023-05-17</p>
+        </div>
+        <div id="choose"></div>
+        <br>
+        <div>
+            <p id="c_locat"></p>
+            <p>累積確診人數</p>
+            <canvas id="myCanvas"width="480"height="100"></canvas>
+            <br>
+            <br>
+            <canvas id="myCharts" width="1000px" height="600px"></canvas>
+            </div>
+        </div>
+        <br>
+        <center>
+            <div>
+                <p>"要按Enter"</p>
+                <a>----------</a>
+                <a>區域</a><input type="text" id="iarea" placeholder="全國">
+                <a>-----</a>
+                <a>開始日期</a><input type="text" id="isdate" placeholder="2020-01-11">
+                <a>-----</a>
+                <a>結束日期</a><input type="text" id="iedate" placeholder="2023-05-17">
+                <a>----------</a>
+            </div>
+            <br>
+            <a id="down" href="data\2023-cdc-Age_County_Gender_day_19Cov_v1_全國_全區.json" download="2023-cdc-Age_County_Gender_day_19Cov_v1_全國_全區"></a>
+            <table id="t">
+                <thead>
+                    <tr>
+                        <td>個案發病日期</td>
+                        <td>縣市</td>
+                        <td>新增確診人數</td>
+                        <td>累積確診人數</td>
+                        <td>七天移動平均新增確診人數</td>
+                    </tr>
+                </thead>
+            </table>
+            <div id="scroll">
+                <table id="table">
+                    <tbody id="tbody"></tbody>
+                </table>
+            </div>
+        </center>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
+
+
