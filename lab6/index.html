@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="shortcut icon"href="#">
+        <link rel="stylesheet"href="style.css">
+    </head>
+    <body>
+        <video id="myVideo"width="320"height="240"></video>
+        <br>
+        <div>
+            <p>Time : 
+                <span id="timeDisplay">? / ?</span>
+                <br>
+                <input type="range"id="progressBar"min="0"value="0">
+            </p>
+        </div>
+        <button id="playBtn">Play</button>
+        <button id="fullBtn">FullScreen</button>
+        <br>
+        <div>
+            <p>Volume : 
+                <span id="volumeDisplay">?</span>
+                <button id="lowerVolumeBtn">-</button>
+                <button id="higherVolumeBtn">+ </button>
+            </p>
+        </div>
+        <br>
+        <button id="next">next</button>
+        <div>
+            <p>Rate : 
+                <span id="rateDisplay">?</span>
+                <button id="lowerRate">-</button>
+                <button id="higherRate">+ </button>
+            </p>
+        </div>
+        <br>
+        <audio id="myAudio"width="320"height="240"></audio>
+        <br>
+        <button id="play_audio">Play audio</button>
+
+        <!-- <script src="//unpkg.com/jquery"></script> -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

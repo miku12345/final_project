@@ -2,13 +2,13 @@
 let playList=[
     "p2OpzDkVoQ8",
     "s1vf4OuN9Os",
-    "Q_oag_LmLQA",
-    "t8CG9BdzzgM"
+    "8KtmxUPne0g",
+    "0YzY8PeKIeo"
 ];
 //播放起訖秒數
 let playTime=[
-    [74,84],
+    [74,86],
     [0,5],
-    [18,26],
-    [176,178],
+    [18,21],
+    [47,50],
 ];

@@ -1,0 +1,12 @@
+https://miku12345.github.io/mid_project/
+
+git reset HEAD^
+git remote rm origin
+
+
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/miku12345/mid_project.git
+git branch -M main
+git push -u origin main
