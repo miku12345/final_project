@@ -1,5 +1,20 @@
 //2,7,14
 //json-server --watch db.json
+/*
+git reset HEAD^
+git remote rm origin
+git config --global user.name "miku12345"
+git config --global user.email the.first.song12345@gmail.com
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/miku12345/final_project.git
+git branch -M master
+git push -u origin master
+
+https://my-json-server-db.scm.azurewebsites.net/dev/wwwroot/server.js
+https://miku12345.github.io/final_project
+*/
 var locat=
 {
     "全國":"0",
