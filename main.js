@@ -98,7 +98,8 @@ function set_button()
 
 function set_table()
 {
-    var url="http://localhost:3000/";
+    //var url="http://localhost:3000/";
+    var url="https://my-json-server-db.azurewebsites.net/"
     
     var t;
     if(locat[iarea.value]!=undefined)
