@@ -149,10 +149,6 @@ function set_table()
     $.getJSON(url)
     .done(function(msg)
     {
-        if(ischart==1)
-        {
-            show_canvas(msg[0].a05.toString());
-        }
         //console.log(msg);
         var tbody=document.getElementById('tbody');
         tbody.remove();
@@ -195,6 +191,7 @@ function set_table()
         table.appendChild(tbody);
         if(ischart==1)
         {
+            show_canvas(msg[0].a05.toString());
             show_chart(msg);
             ischart=0;
         }
