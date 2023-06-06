@@ -15,6 +15,7 @@ git push -u origin master
 https://my-json-server-db.scm.azurewebsites.net/dev/wwwroot/server.js
 https://miku12345.github.io/final_project
 */
+
 var locat=
 {
     "全國":"0",
@@ -47,6 +48,7 @@ var current_locat;
 var thisImage;
 var sdate=new Date("2020-1-11");
 var edate=new Date("2023-05-17");
+var ischart=0;
 
 var choose=document.getElementById('choose');
 var c_locat=document.getElementById('c_locat');
@@ -102,12 +104,14 @@ function set_button()
             down.textContent="下載"+current_locat+"的表單資料(API)";
             console.log(down.href);
             console.log(down.download);
+            ischart=1;
             set_table();
         };
         choose.appendChild(b);
         down.href="data\\2023-cdc-Age_County_Gender_day_19Cov_v1_"+current_locat+"_全區.json";
         down.download="2023-cdc-Age_County_Gender_day_19Cov_v1_"+current_locat+"_全區.json";
         down.textContent="下載"+current_locat+"的表單資料(API)";
+        ischart=1;
     }
 }
 
@@ -186,7 +190,12 @@ function set_table()
             i++;
         }
         table.appendChild(tbody);
-        show_chart(msg);
+        if(ischart==1)
+        {
+            show_chart(msg);
+            ischart=0;
+        }
+        
     })
     .fail(function(msg)
     {
