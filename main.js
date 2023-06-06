@@ -149,7 +149,10 @@ function set_table()
     $.getJSON(url)
     .done(function(msg)
     {
-        show_canvas(msg[0].a05.toString());
+        if(ischart==1)
+        {
+            show_canvas(msg[0].a05.toString());
+        }
         //console.log(msg);
         var tbody=document.getElementById('tbody');
         tbody.remove();
